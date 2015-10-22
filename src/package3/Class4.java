@@ -13,6 +13,8 @@ public class Class4 {
 	
 	public void print(){
 		System.out.println(ref3.getNumber());
+		Class1 c1 = new Class1();
+		c1.variable = "nothing";
 	}
 	
 	
