@@ -10,10 +10,7 @@ public class MyList<T extends Data> {
 	}
 	
 	public T get(int i){
-		if(i<array.length){
-			return array[i];
-		}
-		return null;
+		return array[i];
 	}
 
 	

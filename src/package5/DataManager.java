@@ -19,6 +19,8 @@ public class DataManager {
 		
 		numberTree.find(new NumberNode("est",2), new NumberNode("abl",3));
 		
+		numberTree.k = 15;
+		
 		Parameterized<Data> par = new Parameterized<Data>();
 		
 		par.t = new StringData("test", 15);

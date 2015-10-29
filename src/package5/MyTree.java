@@ -4,6 +4,8 @@ public class MyTree<N extends Node> {
 	
 	private N root;
 	
+	public int k;
+	
 	public MyTree(N root){
 		this.root = root;
 	}
