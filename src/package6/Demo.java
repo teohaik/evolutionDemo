@@ -4,12 +4,21 @@ import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Collections;
 
+import a.b.*;
+
 public class Demo {
 	
 	String name = "test";
 	
+	
+	
 	public Demo(){
 		
+	}
+	
+	public void aDemoLibCall(){
+		double powered = LibClass.power(3,6);
+		System.out.println(powered);
 	}
 	
 	public void fooBase64Demo(){
