@@ -3,23 +3,32 @@ package package6;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Collections;
-
-import a.b.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Demo {
 	
-	String name = "test";
-	
+	String name = "This is a test name";
+	final Map<String, Number> testMap = new HashMap<>();
 	
 	
 	public Demo(){
-		
+
 	}
 	
-	public void aDemoLibCall(){
-		double powered = LibClass.power(3,6);
-		System.out.println(powered);
-	}
+        public synchronized void synchmethod(){
+            name.split(" ");
+        }
+        
+        public void synchBlockmethod(){
+            System.out.println("test bla bla ");
+            int k = 6;
+            int z = 5 + k;
+            synchronized (testMap) {
+                testMap.put("bla", 1);
+                testMap.put("blabla bla ", 2);
+            }
+        }
 	
 	public void fooBase64Demo(){
 		byte[] bytes = new byte[1024];
