@@ -45,4 +45,8 @@ public class Demo {
 		Collections.sort(list);
 	}
 
+	public void test(){
+		//this is a test method
+	}
+
 }
